@@ -1,17 +1,17 @@
 output "arn" {
-  value = module.my_cluster.cluster.arn
+  value = module.my-cluster.cluster_arn
 }
 
 output "cluster_id" {
-  value = module.my_cluster.cluster.id
+  value = module.my-cluster.cluster_id
 }
 
 output "Sec_group" {
-  value = module.my_cluster.security_group.id
+  value = module.my-cluster.cluster_security_group_id
 }
 
 output "region" {
-  value = aws_provider.region
+  value = aws_provider_region
 }
 
 
