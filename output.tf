@@ -11,7 +11,7 @@ output "Sec_group" {
 }
 
 output "region" {
-  value = aws_provider_region
+  value = aws_region_id
 }
 
 
