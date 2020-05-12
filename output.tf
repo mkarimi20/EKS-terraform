@@ -11,7 +11,7 @@ output "Sec_group" {
 }
 
 output "node_groups" {
-  value = module.my-cluster.node_groups
+  value = module.my-cluster.node_groups_id
 }
 
 
