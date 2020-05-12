@@ -26,7 +26,7 @@ module "my-cluster" {
     instance_type = "m4.large"
     asg_max_size = 3
     asg_min_size = 2
-    asg_desired_capicity = 2
+    asg_desired_capacity = 2
 
     }
   ]
