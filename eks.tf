@@ -23,7 +23,7 @@ module "my-cluster" {
              "subnet-5d976653"]
   vpc_id = "vpc-2ada9250"
   worker_groups = [{
-    instance_type = "t2.mediom"
+    instance_type = "m4.large"
     asg_max_size = 3
     asg_min_size = 2
     asg_desired_capicity = 2
