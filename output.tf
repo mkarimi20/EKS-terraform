@@ -9,4 +9,8 @@ output "cluster_name" {
 output "Sec_group" {
   value = module.my-cluster.cluster_security_group_id
 }
+output "region" {
+  value = aws_provider.region
+}
+
 
