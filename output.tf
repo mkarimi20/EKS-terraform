@@ -10,3 +10,8 @@ output "Sec_group" {
   value = "module.my_cluster.security_group.id"
 }
 
+output "region" {
+  value = "aws_provider.region"
+}
+
+
