@@ -16,17 +16,20 @@ provider "kubernetes" {
 
 module "my-cluster" {
   source = "terraform-aws-modules/eks/aws"
-  cluster_name = "my-cluster"
-  cluster_version = "1.14"
-  subnets = ["subnet-7da9951a",
-             "subnet-50350f7e",
-             "subnet-5d976653"]
-  vpc_id = "vpc-2ada9250"
+  version = "12.0.0"
+  cluster_name = var.cluster_name
+  cluster_version = var.cluster_version
+  subnets = [
+      var.subnet1,
+      var.subnet2,
+      var.subnet3
+  ]
+  vpc_id = var.vpc_id
   worker_groups = [{
-    instance_type = "m4.large"
-    asg_max_size = 3
-    asg_min_size = 2
-    asg_desired_capacity = 2
+    instance_type = var.instance_type
+    asg_max_size = var.asg_max_size
+    asg_min_size = var.asg_min_size
+    asg_desired_capacity = var.asg_desired_capacity
 
     }
   ]

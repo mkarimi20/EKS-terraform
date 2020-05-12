@@ -1,0 +1,17 @@
+environment = "dev"
+region = "us-east-1"
+s3_bucket = "mkarimi-2020"                  #Will be used to set backend.tf
+s3_folder_project = "application"            #Will be used to set backend.tf
+s3_folder_region = "us-east-1"               #Will be used to set backend.tf
+s3_folder_type = "state"                     #Will be used to set backend.tf
+s3_tfstate_file = "infrastructure.tfstate"   #Will be used to set backend.tf
+vpc_id = "vpc-2ada9250"
+subnet1 = "subnet-7da9951a"
+subnet2 = "subnet-50350f7e"
+subnet3 = "subnet-5d976653"
+cluster_name = "my-cluster"
+instance_type = "m4.large"
+asg_max_size = "3" 
+asg_min_size = "2"
+asg_desired_capacity = "2"
+cluster_version = "1.14"
