@@ -2,7 +2,7 @@ output "arn" {
   value = module.my-cluster.cluster_arn
 }
 
-output "cluster_id" {
+output "cluster_name" {
   value = module.my-cluster.cluster_id
 }
 
