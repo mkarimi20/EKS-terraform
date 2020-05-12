@@ -5,7 +5,7 @@ resource "null_resource" "login" {
     }
 }
 
-resource "null_resource" "state of nodes" {
+resource "null_resource" "state_of_nodes" {
     
     provisioner "local-exec" {
         command = "kubctl get nodes"
