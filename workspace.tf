@@ -1,4 +1,4 @@
 organization = "practice-terraform"
-    workspacess {
+    workspaces {
         prefix = "EKS-terraform"
 }
